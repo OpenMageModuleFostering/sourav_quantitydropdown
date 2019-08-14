@@ -26,7 +26,7 @@ $enableOption=array(
 
 );
 
-$installer->addAttribute('catalog_product','dreamgnto_quantity_enable',$enableOption);
+$installer->addAttribute('catalog_product','dream_quantity_enable',$enableOption);
 
 
 
@@ -57,7 +57,7 @@ $data=array(
 
 );
 
-$installer->addAttribute('catalog_product','dreamgnto_quantity_option',$data);
+$installer->addAttribute('catalog_product','dream_quantity_option',$data);
 
 
 

@@ -23,7 +23,7 @@ $enableOption=array(
 'comparable' => false,
 'visible_on_front' =>true,
 'unique' => false,
-'apply_to' => 'simple',
+'apply_to' => '',
 
 );
 
@@ -39,23 +39,16 @@ $data=array(
 'group' => 'Product Quantity DropDown',
 'type' => 'varchar',
 'label' => 'Product Quantity Options',
-'input' => 'multiselect',
+'input' => 'text',
 'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
 'visible' => true,
-'backend'=> 'eav/entity_attribute_backend_array',
 'required' => false, 
 'searchable' => false,
 'filterable' => false,
 'comparable' => false,
 'visible_on_front' =>true,
 'unique' => false,
-'apply_to' => 'simple',
-'option'            => array ('value' => array('optionone' => array('20'),
-									 'optiontwo' => array('40'),
-									 'optionthree' => array('60'),												
-								)
-							),
-
+'apply_to' => '',
 );
 
 $installer->addAttribute('catalog_product','dream_quantity_option',$data);
