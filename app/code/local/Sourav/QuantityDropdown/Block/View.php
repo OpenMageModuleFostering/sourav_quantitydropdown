@@ -11,10 +11,10 @@ class Sourav_QuantityDropdown_Block_View extends Mage_Catalog_Block_Product_View
    
           function hasSimpleQuantity() {
 			$product = $this->getProduct();
-		   $enableForProduct=$product->getResource()->getAttribute('dreamgnto_quantity_enable')->getFrontend()->getValue($product);
+		   $enableForProduct=$product->getResource()->getAttribute('dream_quantity_enable')->getFrontend()->getValue($product);
             
 			
-			$hasValue=intval($product->getDreamgntoQuantityOption())  ; 			
+			$hasValue=intval($product->getDreamQuantityOption())  ; 			
 			if($enableForProduct=="Yes" && $hasValue>0){
 			     return true;
 			}else{
@@ -28,8 +28,9 @@ class Sourav_QuantityDropdown_Block_View extends Mage_Catalog_Block_Product_View
 		 {
 			 $product = $this->getProduct();
  		   
-			 $QuantityOptions=$product->getResource()->getAttribute('dreamgnto_quantity_option')->getFrontend()->getValue($product);	 
-			 return $optionsArray = explode(",",$QuantityOptions);
+			 $QuantityOptions=$product->getResource()->getAttribute('dream_quantity_option')->getFrontend()->getValue($product);	 
+              $QuantityOptions = rtrim($QuantityOptions, ',');			
+			return $optionsArray = explode(",",$QuantityOptions);
          }	   
 
 }
