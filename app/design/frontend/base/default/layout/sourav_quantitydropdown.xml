@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <default>
+
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/sourav_quantitydropdown/style.css</name></action>
+        </reference>
+
+	</default>
+	
+		
+	<PRODUCT_TYPE_simple>
+		
+	<reference name="product.info.addtocart">	
+      <action method="setTemplate"><template>sourav_quantitydropdown/product_view_addtocart.phtml</template></action>		
+    </reference>	
+  		
+    </PRODUCT_TYPE_simple>
+	
+</layout>

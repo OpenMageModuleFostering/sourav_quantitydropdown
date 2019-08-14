@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Sourav_QuantityDropdown",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "This extension allow to restrict the quantity of product. This extension enable you restrict the quantity at product page.Frontend user will choose the quantity from dropdown options.",
+    "authors": [
+    {
+        "name": "Keshav",
+        "email": "keshavmage@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
