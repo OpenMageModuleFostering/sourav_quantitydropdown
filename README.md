@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This extension allow to restrict the quantity of product. This extension enable you restrict the quantity at product page.Frontend user will choose the quantity from dropdown options.
